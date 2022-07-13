@@ -27,8 +27,6 @@ public class QueryProcessor {
             }
             return String.valueOf(sum);
 
-        } else if (query.contains("largest")) {
-            numbers = query.substring();
         } else { // TODO extend the programm here
             return "";
         }
