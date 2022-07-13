@@ -15,7 +15,7 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
             return "marina";
         } else { // TODO extend the programm here
-            if () return "";
+            return "";
         }
     }
 }
