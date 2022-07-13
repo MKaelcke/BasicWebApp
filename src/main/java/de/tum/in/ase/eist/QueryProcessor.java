@@ -14,6 +14,21 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
             return "marina";
+        } else if (query.contains("plus")) {
+            String[] params = query.split(" ");
+            int sum = 0;
+            for (String s : params) {
+                try {
+                    int n = Integer.parseInt(s);
+                    sum += n;
+                } catch (NumberFormatException e) {
+                    //
+                }
+            }
+            return String.valueOf(sum);
+
+        } else if (query.contains("largest")) {
+            numbers = query.substring();
         } else { // TODO extend the programm here
             return "";
         }
